@@ -9,7 +9,7 @@ Original file is located at
 METHOD 1- **TRAINING**
 """
 
-student_id = 2202156
+id = xxxxxxxxxx
 
 !pip install transformers
 
@@ -39,14 +39,14 @@ stopword = stopwords.words('english')
 
 from sklearn.model_selection import train_test_split
 
-GOOGLE_DRIVE_PATH_AFTER_MYDRIVE = os.path.join('./CE807/Assignment2/',str(student_id)) # Make sure to update with your student_id and student_id is an integer
+GOOGLE_DRIVE_PATH_AFTER_MYDRIVE = os.path.join('./xxxxxxx/nnnnn/',str(id)) # Make sure to update with your student_id and student_id is an integer
 GOOGLE_DRIVE_PATH = os.path.join('gdrive', 'MyDrive', GOOGLE_DRIVE_PATH_AFTER_MYDRIVE)
 print('List files: ', os.listdir(GOOGLE_DRIVE_PATH))
 
 # set same seeds for all libraries
 
 #numpy seed
-np.random.seed(student_id)
+np.random.seed(id)
 
 train_file = os.path.join(GOOGLE_DRIVE_PATH, 'train.csv') # This is 100% of data
 
